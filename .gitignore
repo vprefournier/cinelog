@@ -26,7 +26,13 @@ bin
 node_modules
 
 # Dependency directory for bower module
-public/lib
+public/lib/backbone
+public/lib/bootstrap
+public/lib/jquery
+public/lib/microplugin
+public/lib/selectize
+public/lib/sifter
+public/lib/underscore
 
 # File used by some editor to register the workspace settings
 /.project
