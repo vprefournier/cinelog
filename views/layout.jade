@@ -1,7 +1,23 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/css/style.css')
-  body
-    block content
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='')
+        meta(name='csrf-token', content=_csrf)
+        meta(name='author', content='')
+        title #{title} | Hackathon Starter
+        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/lib/selectize/dist/css/selectize.bootstrap3.css')
+    body
+        include partials/navbar
+        .container
+          block content
+
+        include partials/footer
+        script(type='text/javascript' src='/lib/jquery/dist/jquery.js')
+        script(type='text/javascript' src='/lib/bootstrap/dist/js/bootstrap.js')
+        script(type='text/javascript' src='/lib/microplugin/src/microplugin.js')
+        script(type='text/javascript' src='/lib/sifter/sifter.js')
+        script(type='text/javascript' src='/lib/selectize/dist/js/selectize.js')
