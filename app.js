@@ -10,6 +10,8 @@ var users = require('./routes/users');
 
 var app = express();
 
+console.log("HALLO!");
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -54,6 +56,15 @@ app.use(function(err, req, res, next) {
         message: err.message,
         error: {}
     });
+});
+
+
+/**
+ * Start Express server.
+ */
+
+app.listen(3000, function() {
+    console.log('Express server listening on port %d in %s mode', 3000, app.get('env'));
 });
 
 

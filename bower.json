@@ -1,0 +1,13 @@
+{
+  "name": "Cinelog",
+  "description": "",
+  "version": "0.0.0",
+  "license": "GPL-2.0",
+  "private": true,
+  "author": "Cinelog team",
+  "dependencies": {
+    "bootstrap": "~3.3.x",
+    "backbone": "~1.1.x",
+    "selectize": "~0.11.2"
+  }
+}
