@@ -7,17 +7,13 @@ html
         meta(name='description', content='')
         meta(name='csrf-token', content=_csrf)
         meta(name='author', content='')
-        title #{title} | Hackathon Starter
-        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.css')
-        link(rel='stylesheet', href='/lib/selectize/dist/css/selectize.bootstrap3.css')
+        title #{title}
+        != css('styles')
     body
         include partials/navbar
         .container
-          block content
+            include partials/flash
+            block content
 
         include partials/footer
-        script(type='text/javascript' src='/lib/jquery/dist/jquery.js')
-        script(type='text/javascript' src='/lib/bootstrap/dist/js/bootstrap.js')
-        script(type='text/javascript' src='/lib/microplugin/src/microplugin.js')
-        script(type='text/javascript' src='/lib/sifter/sifter.js')
-        script(type='text/javascript' src='/lib/selectize/dist/js/selectize.js')
+        != js('application')

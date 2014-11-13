@@ -1,0 +1,183 @@
+@import "lib/bootstrap/bootstrap";
+@import "lib/font-awesome/font-awesome";
+@import "lib/ionicons/ionicons";
+@import "lib/bootstrap-social";
+@import "themes/modern";
+@import (css) "../lib/selectize/dist/css/selectize.bootstrap3.css";
+
+// Scaffolding
+// -------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 60px;
+  margin-bottom: 75px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+
+  p,
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.thumbnails {
+  margin-left: -20px;
+  list-style: none;
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+.navbar-form .form-control {
+  margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-form {
+    border-color: transparent;
+  }
+  .navbar-form {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .navbar-form .form-control {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-form .form-control {
+    width: 405px;
+  }
+  .estante {
+    background-image: url(../img/bg2b.png);
+    background-position: 10px 2px;
+    background-size: 99%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-form .form-control {
+    width: 625px;
+  }
+  .estante {
+    background-image: url(../img/bg2.png);
+    background-position: 10px 2px;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-form .form-control {
+    width: 825px;
+  }
+  .estante {
+    background-image: url(../img/bg2.png);
+    background-position: 30px 0px;
+  }
+
+  .thumbnails {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .estante {
+    background-image: url(../img/bg2c.png);
+    background-position: 0px -23px;
+  }
+}
+
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.estante {
+  background-repeat: repeat-y;
+}
+
+
+// Font Icons
+// -------------------------
+
+.fa,
+[class^='ion-'] {
+  margin-right: 6px;
+}
+
+
+// Main page thumbnails
+// -------------------------
+
+
+.estante .thumbnail {
+  border: none;
+}
+
+.thumbnails:before, .thumbnails:after {
+  display: table;
+  content: "";
+}
+
+.thumbnails:after {
+  clear: both;
+}
+
+//ul, ol {
+  //padding: 0;
+  //margin: 0 0 9px 25px;
+//}
+
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.thumbnail {
+  display: block;
+  padding: 6px;
+  line-height: 1;
+  background-color: transparent;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
